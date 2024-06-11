@@ -1,0 +1,9 @@
+---
+export interface Props {
+  url: string;
+}
+
+
+const { url } = Astro.props;
+---
+    <img src={url} alt="Image" class="m-auto p-2 rounded-lg shadow-2xl "/>

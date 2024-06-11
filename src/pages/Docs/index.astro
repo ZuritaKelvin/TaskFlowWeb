@@ -1,0 +1,77 @@
+---
+import Container from "../../components/container.astro";
+import "@fontsource-variable/inter/index.css";
+import '@fontsource-variable/bricolage-grotesque';
+import Image from "./Image.astro";
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+</head>
+<body class="m-auto rounded-lg shadow-md max-w-2xl text-lg bg-gray-100 h-full overflow-y-scroll">
+    <div class="bg-gray-300 bg-opacity-5 h-full">
+        <Container>
+            <h1 class="p-2 text-center montserrat-title"><a href="/">TaskFlow Documentation</a></h1>
+            <h2 class="montserrat-subtitle">Add a new Task</h2>
+            <p>When starting the application you will automatically
+                 have all the functions available without continuing anything.</p>
+            <p>Go to the section "Add" and fill in the fields of your task 
+                as you want later click on "save" and then you will 
+                see your added task.</p>
+                <Image url={"src/assests/Image1.png"}/>
+                <br>
+            <p>Now having your first task you can use the different functionalities.</p>
+            <ol class="p-2 mb-5">
+                <li>1.- Edit</li>
+                <li>2.- Delete</li>
+                <li>3.- Import to calendar</li>
+            </ol>
+            <h2 class="montserrat-subtitle">AI Integration</h2>
+            <p>Additionally, apart from these functionalities, 
+                you can use the added integration with artificial 
+                intelligence to create and import your tasks more easily.</p>
+                <Image url={"src/assests/Image2.png"}/>
+            <p class="my-5">You can tell ChatGPT what you need to generate your task including more details if you want specific things.</p>
+            <h2 class="montserrat-subtitle">Importing to Calendar</h2>
+            <p class="mb-5">If you want to add a task to your calendar so you 
+                don't have to open the application or if you want 
+                to control your tasks also from other computers where
+                 you share the account you use for your calendar, you can do so.</p>
+                 <Image url={"src/assests/Image3.png"}/>
+            <p class="my-5">A window will open with your default calendar application where you can import the task.</p>
+            <Image url={"src/assests/Image4.png"}/>
+            <p class="mt-5 mb-6">Later you will be able to see your added task on your calendar</p>
+            <Image url={"src/assests/Image5.png"}/>
+                <br>
+        </Container>
+    </div>
+</body>
+</html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    .montserrat-title {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    }
+    .montserrat-subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 2rem
+    }
+    .montserrat-main {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    }
+</style>
